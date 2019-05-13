@@ -1,33 +1,199 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+body {
+    font-family: 'Barlow', sans-serif !important;
+    background: #fc4a1a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #f7b733,
+        #fc4a1a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .landing-grid {
+        padding-top: 10% !important;
+        font-size: 10px;
+    }
+    .landing-img {
+        height: 250px;
+        width: 310px;
+        border-radius: 10%;
+    }
+    .banner-text h1 {
+        font-size: 32px !important;
+    }
+    .avatar-img {
+        height: 150px;
+        width: 350px;
+    }
+    .about-grid {
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-grid {
+        padding-top: 10% !important;
+    }
+    .table {
+        table-layout: auto;
+        width: 100% !important;
+        overflow-x: auto;
+        display: block;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-color {
+    background: #fc4a1a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #f7b733,
+        #fc4a1a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #f7b733,
+        #fc4a1a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-link {
-  color: #61dafb;
+.img-label {
+    width: 80px;
+    height: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-grid {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.landing-img {
+    height: 30%;
+    border-radius: 10%;
+    margin-top: 7%;
+    object-fit: contain;
+}
+
+.avatar-img {
+    height: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.banner-text {
+    background-color: black;
+    opacity: 0.8;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+.banner-text hr {
+    border-top: 5px dotted white;
+    width: 50%;
+    margin: auto;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.social-links i {
+    color: white;
+    font-size: 5em;
+    padding: 8px;
+}
+
+.about-grid {
+    margin-top: 3%;
+}
+
+.contact-grid {
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-text-contact {
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.8;
+    width: 75%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-text-contact h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+.banner-text-contact hr {
+    border-top: 5px dotted white;
+    width: 50%;
+    margin: auto;
+}
+
+.banner-text-contact p {
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+}
+
+.social-links-contact {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.social-links-contact i {
+    color: white;
+    font-size: 5em;
+    padding: 8px;
+}
+
+.otteluohjelma {
+    color: #fff;
+    margin-top: 9%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.table {
+    width: 80%;
+    margin: 0 auto;
 }
